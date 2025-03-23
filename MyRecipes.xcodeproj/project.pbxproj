@@ -9,6 +9,27 @@
 /* Begin PBXBuildFile section */
 		5E030B9D2D8FA045006609E0 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030B9C2D8FA045006609E0 /* MealViewController.swift */; };
 		5E030B9F2D8FA055006609E0 /* CocktailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030B9E2D8FA055006609E0 /* CocktailViewController.swift */; };
+		5E030BB42D8FD5F1006609E0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5E030BB32D8FD5F1006609E0 /* Alamofire */; };
+		5E030BB62D8FD5F1006609E0 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5E030BB52D8FD5F1006609E0 /* AlamofireDynamic */; };
+		5E030BB92D8FD604006609E0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5E030BB82D8FD604006609E0 /* SwiftyJSON */; };
+		5E030BBC2D8FD61F006609E0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5E030BBB2D8FD61F006609E0 /* Kingfisher */; };
+		5E030BBE2D8FD662006609E0 /* JSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BBD2D8FD662006609E0 /* JSONMapper.swift */; };
+		5E030BC02D8FD67F006609E0 /* NetworkErrorHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BBF2D8FD67F006609E0 /* NetworkErrorHandlerProtocol.swift */; };
+		5E030BC22D8FD6B2006609E0 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BC12D8FD6B2006609E0 /* RestResponse.swift */; };
+		5E030BC42D8FD7E7006609E0 /* APIHeadersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BC32D8FD7E7006609E0 /* APIHeadersProvider.swift */; };
+		5E030BC62D8FD80F006609E0 /* NetworkingConfigProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BC52D8FD80F006609E0 /* NetworkingConfigProtocol.swift */; };
+		5E030BC82D8FD875006609E0 /* RPCEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BC72D8FD875006609E0 /* RPCEndpoint.swift */; };
+		5E030BCA2D8FD9BD006609E0 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BC92D8FD9BD006609E0 /* APIResponse.swift */; };
+		5E030BCC2D8FDA14006609E0 /* NetworkingCancelableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BCB2D8FDA14006609E0 /* NetworkingCancelableBox.swift */; };
+		5E030BCE2D8FDA7C006609E0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BCD2D8FDA7C006609E0 /* Endpoint.swift */; };
+		5E030BD02D8FDAE3006609E0 /* RPCHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BCF2D8FDAE3006609E0 /* RPCHTTPMethod.swift */; };
+		5E030BD22D8FDB40006609E0 /* RPCParamsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BD12D8FDB40006609E0 /* RPCParamsBuilder.swift */; };
+		5E030BD42D8FDCD4006609E0 /* RPCAPIManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BD32D8FDCD4006609E0 /* RPCAPIManagerFactory.swift */; };
+		5E030BD62D8FDD17006609E0 /* RPCResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BD52D8FDD17006609E0 /* RPCResponse.swift */; };
+		5E030BD82D8FDD59006609E0 /* RPCAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BD72D8FDD59006609E0 /* RPCAPIManager.swift */; };
+		5E030BDA2D8FE31A006609E0 /* DefaultRPCConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BD92D8FE31A006609E0 /* DefaultRPCConfig.swift */; };
+		5E030BDC2D8FE476006609E0 /* MappingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BDB2D8FE476006609E0 /* MappingError.swift */; };
+		5E030BDE2D8FE4B0006609E0 /* JSONMapperImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BDD2D8FE4B0006609E0 /* JSONMapperImp.swift */; };
 		5E568A2A2D885BC70039E0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E568A292D885BC70039E0FC /* AppDelegate.swift */; };
 		5E568A2E2D885BC70039E0FC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E568A2D2D885BC70039E0FC /* MainTabBarController.swift */; };
 		5E568A332D885BC90039E0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E568A322D885BC90039E0FC /* Assets.xcassets */; };
@@ -18,6 +39,23 @@
 /* Begin PBXFileReference section */
 		5E030B9C2D8FA045006609E0 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		5E030B9E2D8FA055006609E0 /* CocktailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailViewController.swift; sourceTree = "<group>"; };
+		5E030BBD2D8FD662006609E0 /* JSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapper.swift; sourceTree = "<group>"; };
+		5E030BBF2D8FD67F006609E0 /* NetworkErrorHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorHandlerProtocol.swift; sourceTree = "<group>"; };
+		5E030BC12D8FD6B2006609E0 /* RestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestResponse.swift; sourceTree = "<group>"; };
+		5E030BC32D8FD7E7006609E0 /* APIHeadersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHeadersProvider.swift; sourceTree = "<group>"; };
+		5E030BC52D8FD80F006609E0 /* NetworkingConfigProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConfigProtocol.swift; sourceTree = "<group>"; };
+		5E030BC72D8FD875006609E0 /* RPCEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCEndpoint.swift; sourceTree = "<group>"; };
+		5E030BC92D8FD9BD006609E0 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		5E030BCB2D8FDA14006609E0 /* NetworkingCancelableBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingCancelableBox.swift; sourceTree = "<group>"; };
+		5E030BCD2D8FDA7C006609E0 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		5E030BCF2D8FDAE3006609E0 /* RPCHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCHTTPMethod.swift; sourceTree = "<group>"; };
+		5E030BD12D8FDB40006609E0 /* RPCParamsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCParamsBuilder.swift; sourceTree = "<group>"; };
+		5E030BD32D8FDCD4006609E0 /* RPCAPIManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCAPIManagerFactory.swift; sourceTree = "<group>"; };
+		5E030BD52D8FDD17006609E0 /* RPCResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCResponse.swift; sourceTree = "<group>"; };
+		5E030BD72D8FDD59006609E0 /* RPCAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCAPIManager.swift; sourceTree = "<group>"; };
+		5E030BD92D8FE31A006609E0 /* DefaultRPCConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRPCConfig.swift; sourceTree = "<group>"; };
+		5E030BDB2D8FE476006609E0 /* MappingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingError.swift; sourceTree = "<group>"; };
+		5E030BDD2D8FE4B0006609E0 /* JSONMapperImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperImp.swift; sourceTree = "<group>"; };
 		5E568A262D885BC70039E0FC /* MyRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E568A292D885BC70039E0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E568A2D2D885BC70039E0FC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -31,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E030BBC2D8FD61F006609E0 /* Kingfisher in Frameworks */,
+				5E030BB92D8FD604006609E0 /* SwiftyJSON in Frameworks */,
+				5E030BB42D8FD5F1006609E0 /* Alamofire in Frameworks */,
+				5E030BB62D8FD5F1006609E0 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +133,14 @@
 		5E030BA12D8FA08D006609E0 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				5E030BCF2D8FDAE3006609E0 /* RPCHTTPMethod.swift */,
+				5E030BD12D8FDB40006609E0 /* RPCParamsBuilder.swift */,
+				5E030BD32D8FDCD4006609E0 /* RPCAPIManagerFactory.swift */,
+				5E030BD52D8FDD17006609E0 /* RPCResponse.swift */,
+				5E030BD72D8FDD59006609E0 /* RPCAPIManager.swift */,
+				5E030BD92D8FE31A006609E0 /* DefaultRPCConfig.swift */,
+				5E030BDB2D8FE476006609E0 /* MappingError.swift */,
+				5E030BDD2D8FE4B0006609E0 /* JSONMapperImp.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -98,6 +148,15 @@
 		5E030BA22D8FA098006609E0 /* NetworkingCore */ = {
 			isa = PBXGroup;
 			children = (
+				5E030BBF2D8FD67F006609E0 /* NetworkErrorHandlerProtocol.swift */,
+				5E030BBD2D8FD662006609E0 /* JSONMapper.swift */,
+				5E030BC12D8FD6B2006609E0 /* RestResponse.swift */,
+				5E030BC32D8FD7E7006609E0 /* APIHeadersProvider.swift */,
+				5E030BC52D8FD80F006609E0 /* NetworkingConfigProtocol.swift */,
+				5E030BC72D8FD875006609E0 /* RPCEndpoint.swift */,
+				5E030BC92D8FD9BD006609E0 /* APIResponse.swift */,
+				5E030BCB2D8FDA14006609E0 /* NetworkingCancelableBox.swift */,
+				5E030BCD2D8FDA7C006609E0 /* Endpoint.swift */,
 			);
 			path = NetworkingCore;
 			sourceTree = "<group>";
@@ -155,6 +214,12 @@
 			dependencies = (
 			);
 			name = MyRecipes;
+			packageProductDependencies = (
+				5E030BB32D8FD5F1006609E0 /* Alamofire */,
+				5E030BB52D8FD5F1006609E0 /* AlamofireDynamic */,
+				5E030BB82D8FD604006609E0 /* SwiftyJSON */,
+				5E030BBB2D8FD61F006609E0 /* Kingfisher */,
+			);
 			productName = MyRecipes;
 			productReference = 5E568A262D885BC70039E0FC /* MyRecipes.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +248,11 @@
 				Base,
 			);
 			mainGroup = 5E568A1D2D885BC60039E0FC;
+			packageReferences = (
+				5E030BB22D8FD5F1006609E0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5E030BB72D8FD604006609E0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				5E030BBA2D8FD61F006609E0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 5E568A272D885BC70039E0FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,10 +279,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E030BD82D8FDD59006609E0 /* RPCAPIManager.swift in Sources */,
+				5E030BD62D8FDD17006609E0 /* RPCResponse.swift in Sources */,
+				5E030BD02D8FDAE3006609E0 /* RPCHTTPMethod.swift in Sources */,
+				5E030BC02D8FD67F006609E0 /* NetworkErrorHandlerProtocol.swift in Sources */,
 				5E030B9F2D8FA055006609E0 /* CocktailViewController.swift in Sources */,
+				5E030BBE2D8FD662006609E0 /* JSONMapper.swift in Sources */,
+				5E030BCE2D8FDA7C006609E0 /* Endpoint.swift in Sources */,
+				5E030BC22D8FD6B2006609E0 /* RestResponse.swift in Sources */,
+				5E030BC42D8FD7E7006609E0 /* APIHeadersProvider.swift in Sources */,
+				5E030BDA2D8FE31A006609E0 /* DefaultRPCConfig.swift in Sources */,
+				5E030BD42D8FDCD4006609E0 /* RPCAPIManagerFactory.swift in Sources */,
+				5E030BCC2D8FDA14006609E0 /* NetworkingCancelableBox.swift in Sources */,
+				5E030BCA2D8FD9BD006609E0 /* APIResponse.swift in Sources */,
 				5E568A2E2D885BC70039E0FC /* MainTabBarController.swift in Sources */,
+				5E030BC82D8FD875006609E0 /* RPCEndpoint.swift in Sources */,
 				5E568A2A2D885BC70039E0FC /* AppDelegate.swift in Sources */,
+				5E030BD22D8FDB40006609E0 /* RPCParamsBuilder.swift in Sources */,
+				5E030BC62D8FD80F006609E0 /* NetworkingConfigProtocol.swift in Sources */,
 				5E030B9D2D8FA045006609E0 /* MealViewController.swift in Sources */,
+				5E030BDE2D8FE4B0006609E0 /* JSONMapperImp.swift in Sources */,
+				5E030BDC2D8FE476006609E0 /* MappingError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +512,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E030BB22D8FD5F1006609E0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		5E030BB72D8FD604006609E0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		5E030BBA2D8FD61F006609E0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E030BB32D8FD5F1006609E0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E030BB22D8FD5F1006609E0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		5E030BB52D8FD5F1006609E0 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E030BB22D8FD5F1006609E0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		5E030BB82D8FD604006609E0 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E030BB72D8FD604006609E0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		5E030BBB2D8FD61F006609E0 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E030BBA2D8FD61F006609E0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E568A1E2D885BC70039E0FC /* Project object */;
 }
