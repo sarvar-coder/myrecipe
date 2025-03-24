@@ -8,12 +8,28 @@
 import Foundation
 
 enum RPCAPIManagerFactory {
-    static func create(config: NetworkingConfigProtocol) -> RPCAPIManager {
+    static func createForMeal(config: NetworkingConfigProtocol = DefaultRPCConfig(baseURL: BaseURL.meal)) -> RPCAPIManager {
         RPCAPIManager(
             config: config,
             paramsBuilder: RPCParamsBuilder().buildParams,
             reportErrorHandler: { error in
                 debugPrint(error, "FOO")
             })
+        
     }
+    
+    static func createForCocktail(
+        config: NetworkingConfigProtocol = DefaultRPCConfig(baseURL: BaseURL.cocktail))
+    -> RPCAPIManager {
+        RPCAPIManager(
+            config: config,
+            paramsBuilder: RPCParamsBuilder().buildParams) { error in
+                debugPrint(error, "FOO")
+            }
+    }
+}
+
+struct BaseURL {
+    static let meal = "https://www.themealdb.com/api/"
+    static let cocktail = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
 }

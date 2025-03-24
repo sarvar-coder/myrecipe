@@ -17,14 +17,13 @@ class MainTabBarController: UITabBarController {
 
     func setupViewController() {
     
-        let vc1 = UINavigationController(rootViewController: UIViewController())
-        let vc2 = UINavigationController(rootViewController: UIViewController())
+        let recipesViewController = RecipesViewController.configure()
         
-        vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 3)
-        vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2)
+        let recipesNavController = UINavigationController(rootViewController: recipesViewController)
         
-        viewControllers = [vc1, vc2]
+        recipesNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
+        
+        viewControllers = [recipesNavController]
     }
-
 }
 

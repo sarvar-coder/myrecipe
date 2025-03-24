@@ -15,15 +15,15 @@ public protocol RPCEndpoint: Endpoint {
     var method: RPCHTTPMethod { get }
     var parameters: [String: Any]? { get }
     
-    var headers: HTTPHeaders { get }
+    var headers: HTTPHeaders? { get }
     var encoding: Alamofire.ParameterEncoding { get }
 }
 
 extension RPCEndpoint {
     
-    var encoding: Alamofire.ParameterEncoding { URLEncoding.default }
+    public var encoding: Alamofire.ParameterEncoding { URLEncoding.default }
     
-    var headers: HTTPHeaders? { nil }
+    public var headers: HTTPHeaders? { nil }
     
-    var parameters: [String: Any]? { nil }
+    public var parameters: [String: Any]? { nil }
 }

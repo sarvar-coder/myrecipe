@@ -7,12 +7,9 @@
 
 import Foundation
 
-struct DefaultRPCConfig {
-    static func mealBaseURL(endpoint: any Endpoint) -> String {
-        ""
-    }
-    
-    static func cocktailBaseURL(endpoint: any Endpoint) -> String {
-        ""
+struct DefaultRPCConfig: NetworkingConfigProtocol {
+    let baseURL: String
+    func baseURL(endpoint: Endpoint) -> String {
+        return baseURL
     }
 }

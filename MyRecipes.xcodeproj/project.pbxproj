@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E030B9D2D8FA045006609E0 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030B9C2D8FA045006609E0 /* MealViewController.swift */; };
-		5E030B9F2D8FA055006609E0 /* CocktailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030B9E2D8FA055006609E0 /* CocktailViewController.swift */; };
 		5E030BB42D8FD5F1006609E0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5E030BB32D8FD5F1006609E0 /* Alamofire */; };
 		5E030BB62D8FD5F1006609E0 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5E030BB52D8FD5F1006609E0 /* AlamofireDynamic */; };
 		5E030BB92D8FD604006609E0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5E030BB82D8FD604006609E0 /* SwiftyJSON */; };
@@ -30,15 +28,23 @@
 		5E030BDA2D8FE31A006609E0 /* DefaultRPCConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BD92D8FE31A006609E0 /* DefaultRPCConfig.swift */; };
 		5E030BDC2D8FE476006609E0 /* MappingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BDB2D8FE476006609E0 /* MappingError.swift */; };
 		5E030BDE2D8FE4B0006609E0 /* JSONMapperImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BDD2D8FE4B0006609E0 /* JSONMapperImp.swift */; };
+		5E030BE02D8FE782006609E0 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BDF2D8FE782006609E0 /* RecipesViewController.swift */; };
+		5E030BE22D8FE881006609E0 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BE12D8FE881006609E0 /* Recipe.swift */; };
 		5E568A2A2D885BC70039E0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E568A292D885BC70039E0FC /* AppDelegate.swift */; };
 		5E568A2E2D885BC70039E0FC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E568A2D2D885BC70039E0FC /* MainTabBarController.swift */; };
 		5E568A332D885BC90039E0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E568A322D885BC90039E0FC /* Assets.xcassets */; };
 		5E568A362D885BC90039E0FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E568A342D885BC90039E0FC /* LaunchScreen.storyboard */; };
+		5EB8BCBB2D913F5D003EAE58 /* RecipesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCBA2D913F5D003EAE58 /* RecipesInteractor.swift */; };
+		5EB8BCBD2D9140DD003EAE58 /* RecipesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCBC2D9140DD003EAE58 /* RecipesPresenter.swift */; };
+		5EB8BCBF2D914198003EAE58 /* RecipesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCBE2D914198003EAE58 /* RecipesRouter.swift */; };
+		5EB8BCC12D91424E003EAE58 /* RecipesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCC02D91424E003EAE58 /* RecipesConfigurator.swift */; };
+		5EB8BCC42D9149BC003EAE58 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCC32D9149BC003EAE58 /* RecipesModel.swift */; };
+		5EB8BCC62D914BC9003EAE58 /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCC52D914BC9003EAE58 /* MealService.swift */; };
+		5EB8BCC82D9166F4003EAE58 /* MealEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCC72D9166F4003EAE58 /* MealEndpoint.swift */; };
+		5EB8BCCA2D916719003EAE58 /* MealRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCC92D916719003EAE58 /* MealRecipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E030B9C2D8FA045006609E0 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
-		5E030B9E2D8FA055006609E0 /* CocktailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailViewController.swift; sourceTree = "<group>"; };
 		5E030BBD2D8FD662006609E0 /* JSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapper.swift; sourceTree = "<group>"; };
 		5E030BBF2D8FD67F006609E0 /* NetworkErrorHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorHandlerProtocol.swift; sourceTree = "<group>"; };
 		5E030BC12D8FD6B2006609E0 /* RestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestResponse.swift; sourceTree = "<group>"; };
@@ -56,12 +62,22 @@
 		5E030BD92D8FE31A006609E0 /* DefaultRPCConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRPCConfig.swift; sourceTree = "<group>"; };
 		5E030BDB2D8FE476006609E0 /* MappingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingError.swift; sourceTree = "<group>"; };
 		5E030BDD2D8FE4B0006609E0 /* JSONMapperImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperImp.swift; sourceTree = "<group>"; };
+		5E030BDF2D8FE782006609E0 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		5E030BE12D8FE881006609E0 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		5E568A262D885BC70039E0FC /* MyRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E568A292D885BC70039E0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E568A2D2D885BC70039E0FC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5E568A322D885BC90039E0FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E568A352D885BC90039E0FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E568A372D885BC90039E0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB8BCBA2D913F5D003EAE58 /* RecipesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesInteractor.swift; sourceTree = "<group>"; };
+		5EB8BCBC2D9140DD003EAE58 /* RecipesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesPresenter.swift; sourceTree = "<group>"; };
+		5EB8BCBE2D914198003EAE58 /* RecipesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRouter.swift; sourceTree = "<group>"; };
+		5EB8BCC02D91424E003EAE58 /* RecipesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesConfigurator.swift; sourceTree = "<group>"; };
+		5EB8BCC32D9149BC003EAE58 /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
+		5EB8BCC52D914BC9003EAE58 /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
+		5EB8BCC72D9166F4003EAE58 /* MealEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEndpoint.swift; sourceTree = "<group>"; };
+		5EB8BCC92D916719003EAE58 /* MealRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRecipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +98,7 @@
 		5E030B972D8F9FC7006609E0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				5EB8BCC22D91488D003EAE58 /* Services */,
 				5E030B982D8F9FCF006609E0 /* Models */,
 				5E030B992D8F9FD5006609E0 /* Scenes */,
 			);
@@ -91,6 +108,7 @@
 		5E030B982D8F9FCF006609E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5E030BE12D8FE881006609E0 /* Recipe.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -98,27 +116,24 @@
 		5E030B992D8F9FD5006609E0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				5E030B9A2D8F9FED006609E0 /* MealRecipes */,
-				5E030B9B2D8F9FFA006609E0 /* CocktailRecipes */,
+				5E030B9B2D8F9FFA006609E0 /* Recipes */,
 				5E030BA32D8FA0C3006609E0 /* FavouriteRecipes */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		5E030B9A2D8F9FED006609E0 /* MealRecipes */ = {
+		5E030B9B2D8F9FFA006609E0 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				5E030B9C2D8FA045006609E0 /* MealViewController.swift */,
+				5EB8BCCB2D916E68003EAE58 /* UIComponents */,
+				5E030BDF2D8FE782006609E0 /* RecipesViewController.swift */,
+				5EB8BCBA2D913F5D003EAE58 /* RecipesInteractor.swift */,
+				5EB8BCBC2D9140DD003EAE58 /* RecipesPresenter.swift */,
+				5EB8BCBE2D914198003EAE58 /* RecipesRouter.swift */,
+				5EB8BCC02D91424E003EAE58 /* RecipesConfigurator.swift */,
+				5EB8BCC32D9149BC003EAE58 /* RecipesModel.swift */,
 			);
-			path = MealRecipes;
-			sourceTree = "<group>";
-		};
-		5E030B9B2D8F9FFA006609E0 /* CocktailRecipes */ = {
-			isa = PBXGroup;
-			children = (
-				5E030B9E2D8FA055006609E0 /* CocktailViewController.swift */,
-			);
-			path = CocktailRecipes;
+			path = Recipes;
 			sourceTree = "<group>";
 		};
 		5E030BA02D8FA07D006609E0 /* Core */ = {
@@ -196,6 +211,23 @@
 				5E568A372D885BC90039E0FC /* Info.plist */,
 			);
 			path = MyRecipes;
+			sourceTree = "<group>";
+		};
+		5EB8BCC22D91488D003EAE58 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5EB8BCC52D914BC9003EAE58 /* MealService.swift */,
+				5EB8BCC72D9166F4003EAE58 /* MealEndpoint.swift */,
+				5EB8BCC92D916719003EAE58 /* MealRecipe.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5EB8BCCB2D916E68003EAE58 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,11 +315,18 @@
 				5E030BD62D8FDD17006609E0 /* RPCResponse.swift in Sources */,
 				5E030BD02D8FDAE3006609E0 /* RPCHTTPMethod.swift in Sources */,
 				5E030BC02D8FD67F006609E0 /* NetworkErrorHandlerProtocol.swift in Sources */,
-				5E030B9F2D8FA055006609E0 /* CocktailViewController.swift in Sources */,
+				5EB8BCCA2D916719003EAE58 /* MealRecipe.swift in Sources */,
+				5EB8BCC12D91424E003EAE58 /* RecipesConfigurator.swift in Sources */,
+				5EB8BCBB2D913F5D003EAE58 /* RecipesInteractor.swift in Sources */,
+				5EB8BCBD2D9140DD003EAE58 /* RecipesPresenter.swift in Sources */,
 				5E030BBE2D8FD662006609E0 /* JSONMapper.swift in Sources */,
 				5E030BCE2D8FDA7C006609E0 /* Endpoint.swift in Sources */,
 				5E030BC22D8FD6B2006609E0 /* RestResponse.swift in Sources */,
 				5E030BC42D8FD7E7006609E0 /* APIHeadersProvider.swift in Sources */,
+				5EB8BCBF2D914198003EAE58 /* RecipesRouter.swift in Sources */,
+				5E030BE02D8FE782006609E0 /* RecipesViewController.swift in Sources */,
+				5EB8BCC82D9166F4003EAE58 /* MealEndpoint.swift in Sources */,
+				5E030BE22D8FE881006609E0 /* Recipe.swift in Sources */,
 				5E030BDA2D8FE31A006609E0 /* DefaultRPCConfig.swift in Sources */,
 				5E030BD42D8FDCD4006609E0 /* RPCAPIManagerFactory.swift in Sources */,
 				5E030BCC2D8FDA14006609E0 /* NetworkingCancelableBox.swift in Sources */,
@@ -297,9 +336,10 @@
 				5E568A2A2D885BC70039E0FC /* AppDelegate.swift in Sources */,
 				5E030BD22D8FDB40006609E0 /* RPCParamsBuilder.swift in Sources */,
 				5E030BC62D8FD80F006609E0 /* NetworkingConfigProtocol.swift in Sources */,
-				5E030B9D2D8FA045006609E0 /* MealViewController.swift in Sources */,
+				5EB8BCC62D914BC9003EAE58 /* MealService.swift in Sources */,
 				5E030BDE2D8FE4B0006609E0 /* JSONMapperImp.swift in Sources */,
 				5E030BDC2D8FE476006609E0 /* MappingError.swift in Sources */,
+				5EB8BCC42D9149BC003EAE58 /* RecipesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
