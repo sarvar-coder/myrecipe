@@ -36,7 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         window?.rootViewController = MainTabBarController()
-        MainTabBarController.passManagedObjectContext(window: window, managedObjectContext)
+        MainTabBarController.passContextToRecipeVC(window: window, managedObjectContext)
+        MainTabBarController.passContextToFavVC(window: window, managedObjectContext)
         
         return true
     }
