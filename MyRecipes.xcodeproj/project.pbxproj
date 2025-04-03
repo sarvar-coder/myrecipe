@@ -30,18 +30,23 @@
 		5E030BDE2D8FE4B0006609E0 /* JSONMapperImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BDD2D8FE4B0006609E0 /* JSONMapperImp.swift */; };
 		5E030BE02D8FE782006609E0 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BDF2D8FE782006609E0 /* RecipesViewController.swift */; };
 		5E030BE22D8FE881006609E0 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E030BE12D8FE881006609E0 /* Recipe.swift */; };
+		5E43233B2D941CBB004218D1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E43233A2D941CBB004218D1 /* SnapKit */; };
+		5E43233D2D941CBB004218D1 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5E43233C2D941CBB004218D1 /* SnapKit-Dynamic */; };
+		5E4323402D942D0C004218D1 /* AttributedFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43233F2D942D0C004218D1 /* AttributedFunc.swift */; };
+		5E4323442D9430D1004218D1 /* DefaultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4323432D9430D1004218D1 /* DefaultViewModel.swift */; };
 		5E568A2A2D885BC70039E0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E568A292D885BC70039E0FC /* AppDelegate.swift */; };
 		5E568A2E2D885BC70039E0FC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E568A2D2D885BC70039E0FC /* MainTabBarController.swift */; };
 		5E568A332D885BC90039E0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E568A322D885BC90039E0FC /* Assets.xcassets */; };
 		5E568A362D885BC90039E0FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E568A342D885BC90039E0FC /* LaunchScreen.storyboard */; };
 		5EB8BCBB2D913F5D003EAE58 /* RecipesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCBA2D913F5D003EAE58 /* RecipesInteractor.swift */; };
 		5EB8BCBD2D9140DD003EAE58 /* RecipesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCBC2D9140DD003EAE58 /* RecipesPresenter.swift */; };
-		5EB8BCBF2D914198003EAE58 /* RecipesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCBE2D914198003EAE58 /* RecipesRouter.swift */; };
 		5EB8BCC12D91424E003EAE58 /* RecipesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCC02D91424E003EAE58 /* RecipesConfigurator.swift */; };
-		5EB8BCC42D9149BC003EAE58 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCC32D9149BC003EAE58 /* RecipesModel.swift */; };
 		5EB8BCC62D914BC9003EAE58 /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCC52D914BC9003EAE58 /* MealService.swift */; };
 		5EB8BCC82D9166F4003EAE58 /* MealEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCC72D9166F4003EAE58 /* MealEndpoint.swift */; };
 		5EB8BCCA2D916719003EAE58 /* MealRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCC92D916719003EAE58 /* MealRecipe.swift */; };
+		5EB8BCCD2D917507003EAE58 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8BCCC2D917507003EAE58 /* RecipeView.swift */; };
+		5ECD389C2D9BAB170080DCFF /* MyRecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD389A2D9BAB170080DCFF /* MyRecipes.xcdatamodeld */; };
+		5ECD38A12D9C5EC70080DCFF /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD38A02D9C5EC70080DCFF /* VideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +69,8 @@
 		5E030BDD2D8FE4B0006609E0 /* JSONMapperImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperImp.swift; sourceTree = "<group>"; };
 		5E030BDF2D8FE782006609E0 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		5E030BE12D8FE881006609E0 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		5E43233F2D942D0C004218D1 /* AttributedFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedFunc.swift; sourceTree = "<group>"; };
+		5E4323432D9430D1004218D1 /* DefaultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewModel.swift; sourceTree = "<group>"; };
 		5E568A262D885BC70039E0FC /* MyRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E568A292D885BC70039E0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E568A2D2D885BC70039E0FC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -72,12 +79,13 @@
 		5E568A372D885BC90039E0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EB8BCBA2D913F5D003EAE58 /* RecipesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesInteractor.swift; sourceTree = "<group>"; };
 		5EB8BCBC2D9140DD003EAE58 /* RecipesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesPresenter.swift; sourceTree = "<group>"; };
-		5EB8BCBE2D914198003EAE58 /* RecipesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRouter.swift; sourceTree = "<group>"; };
 		5EB8BCC02D91424E003EAE58 /* RecipesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesConfigurator.swift; sourceTree = "<group>"; };
-		5EB8BCC32D9149BC003EAE58 /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
 		5EB8BCC52D914BC9003EAE58 /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
 		5EB8BCC72D9166F4003EAE58 /* MealEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEndpoint.swift; sourceTree = "<group>"; };
 		5EB8BCC92D916719003EAE58 /* MealRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRecipe.swift; sourceTree = "<group>"; };
+		5EB8BCCC2D917507003EAE58 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		5ECD389B2D9BAB170080DCFF /* MyRecipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyRecipes.xcdatamodel; sourceTree = "<group>"; };
+		5ECD38A02D9C5EC70080DCFF /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,8 @@
 				5E030BB92D8FD604006609E0 /* SwiftyJSON in Frameworks */,
 				5E030BB42D8FD5F1006609E0 /* Alamofire in Frameworks */,
 				5E030BB62D8FD5F1006609E0 /* AlamofireDynamic in Frameworks */,
+				5E43233B2D941CBB004218D1 /* SnapKit in Frameworks */,
+				5E43233D2D941CBB004218D1 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,13 +135,11 @@
 		5E030B9B2D8F9FFA006609E0 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				5EB8BCCB2D916E68003EAE58 /* UIComponents */,
+				5EB8BCC02D91424E003EAE58 /* RecipesConfigurator.swift */,
 				5E030BDF2D8FE782006609E0 /* RecipesViewController.swift */,
 				5EB8BCBA2D913F5D003EAE58 /* RecipesInteractor.swift */,
 				5EB8BCBC2D9140DD003EAE58 /* RecipesPresenter.swift */,
-				5EB8BCBE2D914198003EAE58 /* RecipesRouter.swift */,
-				5EB8BCC02D91424E003EAE58 /* RecipesConfigurator.swift */,
-				5EB8BCC32D9149BC003EAE58 /* RecipesModel.swift */,
+				5EB8BCCB2D916E68003EAE58 /* UIComponents */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -183,6 +191,32 @@
 			path = FavouriteRecipes;
 			sourceTree = "<group>";
 		};
+		5E43233E2D942CED004218D1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E43233F2D942D0C004218D1 /* AttributedFunc.swift */,
+				5E4323432D9430D1004218D1 /* DefaultViewModel.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5E4323412D942E01004218D1 /* MealService */ = {
+			isa = PBXGroup;
+			children = (
+				5EB8BCC52D914BC9003EAE58 /* MealService.swift */,
+				5EB8BCC72D9166F4003EAE58 /* MealEndpoint.swift */,
+				5EB8BCC92D916719003EAE58 /* MealRecipe.swift */,
+			);
+			path = MealService;
+			sourceTree = "<group>";
+		};
+		5E4323422D942E11004218D1 /* CocktailService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CocktailService;
+			sourceTree = "<group>";
+		};
 		5E568A1D2D885BC60039E0FC = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +240,8 @@
 				5E568A2D2D885BC70039E0FC /* MainTabBarController.swift */,
 				5E030BA02D8FA07D006609E0 /* Core */,
 				5E030B972D8F9FC7006609E0 /* Domain */,
+				5ECD38992D9A71860080DCFF /* CoreData */,
+				5E43233E2D942CED004218D1 /* Utils */,
 				5E568A322D885BC90039E0FC /* Assets.xcassets */,
 				5E568A342D885BC90039E0FC /* LaunchScreen.storyboard */,
 				5E568A372D885BC90039E0FC /* Info.plist */,
@@ -216,9 +252,8 @@
 		5EB8BCC22D91488D003EAE58 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5EB8BCC52D914BC9003EAE58 /* MealService.swift */,
-				5EB8BCC72D9166F4003EAE58 /* MealEndpoint.swift */,
-				5EB8BCC92D916719003EAE58 /* MealRecipe.swift */,
+				5E4323412D942E01004218D1 /* MealService */,
+				5E4323422D942E11004218D1 /* CocktailService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -226,8 +261,18 @@
 		5EB8BCCB2D916E68003EAE58 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				5EB8BCCC2D917507003EAE58 /* RecipeView.swift */,
+				5ECD38A02D9C5EC70080DCFF /* VideoView.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		5ECD38992D9A71860080DCFF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5ECD389A2D9BAB170080DCFF /* MyRecipes.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +296,8 @@
 				5E030BB52D8FD5F1006609E0 /* AlamofireDynamic */,
 				5E030BB82D8FD604006609E0 /* SwiftyJSON */,
 				5E030BBB2D8FD61F006609E0 /* Kingfisher */,
+				5E43233A2D941CBB004218D1 /* SnapKit */,
+				5E43233C2D941CBB004218D1 /* SnapKit-Dynamic */,
 			);
 			productName = MyRecipes;
 			productReference = 5E568A262D885BC70039E0FC /* MyRecipes.app */;
@@ -284,6 +331,7 @@
 				5E030BB22D8FD5F1006609E0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				5E030BB72D8FD604006609E0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				5E030BBA2D8FD61F006609E0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				5E4323392D941CBB004218D1 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 5E568A272D885BC70039E0FC /* Products */;
 			projectDirPath = "";
@@ -313,6 +361,8 @@
 			files = (
 				5E030BD82D8FDD59006609E0 /* RPCAPIManager.swift in Sources */,
 				5E030BD62D8FDD17006609E0 /* RPCResponse.swift in Sources */,
+				5E4323442D9430D1004218D1 /* DefaultViewModel.swift in Sources */,
+				5ECD389C2D9BAB170080DCFF /* MyRecipes.xcdatamodeld in Sources */,
 				5E030BD02D8FDAE3006609E0 /* RPCHTTPMethod.swift in Sources */,
 				5E030BC02D8FD67F006609E0 /* NetworkErrorHandlerProtocol.swift in Sources */,
 				5EB8BCCA2D916719003EAE58 /* MealRecipe.swift in Sources */,
@@ -323,8 +373,8 @@
 				5E030BCE2D8FDA7C006609E0 /* Endpoint.swift in Sources */,
 				5E030BC22D8FD6B2006609E0 /* RestResponse.swift in Sources */,
 				5E030BC42D8FD7E7006609E0 /* APIHeadersProvider.swift in Sources */,
-				5EB8BCBF2D914198003EAE58 /* RecipesRouter.swift in Sources */,
 				5E030BE02D8FE782006609E0 /* RecipesViewController.swift in Sources */,
+				5E4323402D942D0C004218D1 /* AttributedFunc.swift in Sources */,
 				5EB8BCC82D9166F4003EAE58 /* MealEndpoint.swift in Sources */,
 				5E030BE22D8FE881006609E0 /* Recipe.swift in Sources */,
 				5E030BDA2D8FE31A006609E0 /* DefaultRPCConfig.swift in Sources */,
@@ -335,11 +385,12 @@
 				5E030BC82D8FD875006609E0 /* RPCEndpoint.swift in Sources */,
 				5E568A2A2D885BC70039E0FC /* AppDelegate.swift in Sources */,
 				5E030BD22D8FDB40006609E0 /* RPCParamsBuilder.swift in Sources */,
+				5EB8BCCD2D917507003EAE58 /* RecipeView.swift in Sources */,
 				5E030BC62D8FD80F006609E0 /* NetworkingConfigProtocol.swift in Sources */,
+				5ECD38A12D9C5EC70080DCFF /* VideoView.swift in Sources */,
 				5EB8BCC62D914BC9003EAE58 /* MealService.swift in Sources */,
 				5E030BDE2D8FE4B0006609E0 /* JSONMapperImp.swift in Sources */,
 				5E030BDC2D8FE476006609E0 /* MappingError.swift in Sources */,
-				5EB8BCC42D9149BC003EAE58 /* RecipesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +629,14 @@
 				minimumVersion = 8.3.1;
 			};
 		};
+		5E4323392D941CBB004218D1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -601,7 +660,30 @@
 			package = 5E030BBA2D8FD61F006609E0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
+		5E43233A2D941CBB004218D1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E4323392D941CBB004218D1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		5E43233C2D941CBB004218D1 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E4323392D941CBB004218D1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		5ECD389A2D9BAB170080DCFF /* MyRecipes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5ECD389B2D9BAB170080DCFF /* MyRecipes.xcdatamodel */,
+			);
+			currentVersion = 5ECD389B2D9BAB170080DCFF /* MyRecipes.xcdatamodel */;
+			path = MyRecipes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5E568A1E2D885BC70039E0FC /* Project object */;
 }

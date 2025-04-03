@@ -7,14 +7,15 @@
 
 import Foundation
 
-struct Recipe {
+struct ViewModel {
     let id: String
     let name: String
     let category: String
-    let area: String
+    let country: String
     let instruction: String
-    let mealThumb: String
-    let video: String  
+    let imageURLString: String
+    let videoURL: String  
     let ingriedents: [String]
     let measures: [String]
+    let source: String
 }

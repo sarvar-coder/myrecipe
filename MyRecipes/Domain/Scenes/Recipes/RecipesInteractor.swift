@@ -11,26 +11,19 @@ protocol RecipesInteractorBuisessLogic {
     func loadRecipes()
 }
 
-protocol RecipesDataStore {
-    
-}
-
-class RecipesInteractor: RecipesInteractorBuisessLogic, RecipesDataStore {
+class RecipesInteractor: RecipesInteractorBuisessLogic {
     
     var presenter: RecipesPresenterLogic?
-    var service  = MealService()
-    //    private var worker:
+    let service  = MealService()
     
     func loadRecipes() {
         service.fetchMeal { result in
             switch result {
             case .success(let success):
                 self.presenter?.presentRecipe(response: success)
-                print(success)
             case .failure(let failure):
                 print(failure)
             }
         }
     }
-    
 }

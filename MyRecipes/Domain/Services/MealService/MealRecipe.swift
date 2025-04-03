@@ -63,4 +63,5 @@ struct MealRecipe: Codable {
     let strMeasure20: String
     // real Source of the recipe
     let strSource: String
+//    let sth: String
 }

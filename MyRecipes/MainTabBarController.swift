@@ -18,11 +18,12 @@ class MainTabBarController: UITabBarController {
     func setupViewController() {
     
         let recipesViewController = RecipesViewController.configure()
+        // TODO: FAVOURITE VIEW 
         
         let recipesNavController = UINavigationController(rootViewController: recipesViewController)
         
-        recipesNavController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
-        
+        recipesNavController.tabBarItem =  UITabBarItem(title: "Recipes", image: UIImage(systemName: "book"), tag: 0)
+                
         viewControllers = [recipesNavController]
     }
 }

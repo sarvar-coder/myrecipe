@@ -15,6 +15,7 @@ class MealService: MealServiceProtocol {
     
     let apiManager: APIManager
     let jsonMapper: JSONMapper
+    let group = DispatchGroup()
     
     init(apiManager: APIManager = RPCAPIManagerFactory.createForMeal(),
          jsonMapper: JSONMapper = JSONMapperImp()) {
@@ -24,7 +25,9 @@ class MealService: MealServiceProtocol {
     
     func fetchMeal(completion: @escaping (Result<MealType, Error>) -> Void) {
         apiManager.request(with: MealEndpoint.random) { result in
+            self.group.enter()
             completion(self.jsonMapper.mapToResult(from: result, for: nil, type: MealType.self))
+            self.group.leave()
         }
     }
 }

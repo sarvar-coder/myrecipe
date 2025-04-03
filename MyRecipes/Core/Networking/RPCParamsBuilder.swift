@@ -9,7 +9,7 @@ import Foundation
 
 struct RPCParamsBuilder {
     func buildParams(with endpoint: RPCEndpoint) -> [String: Any] {
-        var finalParams: [String: Any] = [:]
+        let finalParams: [String: Any] = [:]
 //        finalParams["jsonrpc"] = endpoint.version
 //        finalParams["method"] = endpoint.method
 //        finalParams["id"] = endpoint.id
