@@ -16,7 +16,6 @@ class MainTabBarController: UITabBarController {
         tabBar.tintColor = .systemMint
         setupViewController()
         set()
-        print(applicationDocumentsDirectory, "foo")
     }
     
     func setupViewController() {
@@ -51,10 +50,18 @@ class MainTabBarController: UITabBarController {
         }
     }
     
-    static func passManagedObjectContext(window: UIWindow?, _ managedContext: NSManagedObjectContext) {
+    static func passContextToRecipeVC(window: UIWindow?, _ managedContext: NSManagedObjectContext) {
         let tabBarController = window?.rootViewController as! UITabBarController
         if let navController = tabBarController.viewControllers?.first as? UINavigationController,
            let viewController = navController.viewControllers[0] as? RecipesViewController {
+            viewController.managedObjectContext = managedContext
+        }
+    }
+    
+    static func passContextToFavVC(window: UIWindow?, _ managedContext: NSManagedObjectContext) {
+        let tabBarController = window?.rootViewController as! UITabBarController
+        if let navController = tabBarController.viewControllers?.last as? UINavigationController,
+           let viewController = navController.viewControllers[0] as? FavouritesViewController {
             viewController.managedObjectContext = managedContext
         }
     }
