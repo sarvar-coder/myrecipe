@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class MainTabBarController: UITabBarController {
     
@@ -15,6 +16,7 @@ class MainTabBarController: UITabBarController {
         tabBar.tintColor = .systemMint
         setupViewController()
         set()
+        print(applicationDocumentsDirectory, "foo")
     }
     
     func setupViewController() {
@@ -48,5 +50,14 @@ class MainTabBarController: UITabBarController {
             recipeTabItem.selectedImage = UIImage(systemName: "book.fill")
         }
     }
+    
+    static func passManagedObjectContext(window: UIWindow?, _ managedContext: NSManagedObjectContext) {
+        let tabBarController = window?.rootViewController as! UITabBarController
+        if let navController = tabBarController.viewControllers?.first as? UINavigationController,
+           let viewController = navController.viewControllers[0] as? RecipesViewController {
+            viewController.managedObjectContext = managedContext
+        }
+    }
 }
+
 

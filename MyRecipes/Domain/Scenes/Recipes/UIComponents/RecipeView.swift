@@ -149,13 +149,10 @@ class RecipeView: UIView {
         self.countryLabel.text = "Country:    " + viewModel.country
         self.categoryLabel.text = "Category:  " + viewModel.category
         instructionTextView.text = "Instruction: \n \n" + viewModel.instruction
-        print(viewModel.ingriedents)
         ingredientsTextView.text =
         "Ingredients: \n \n"
         +
         "\(zip(viewModel.ingriedents, viewModel.measures).map({ "\($0) -------- \($1) \n" }).joined().isEmpty ? "" : "\(zip(viewModel.ingriedents, viewModel.measures).map({ "\($0) -------- \($1) \n" }).joined())" )"
-    
-        print(viewModel.videoURL)
     }
 }
 
