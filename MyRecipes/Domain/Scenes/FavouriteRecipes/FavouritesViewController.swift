@@ -18,15 +18,15 @@ class FavouritesViewController: UIViewController {
         let fetchRequest = NSFetchRequest<FavouriteRecipe>(entityName: "FavouriteRecipe")
         
         let sort1 = NSSortDescriptor(key: "name", ascending: true)
-//        let sort2 = NSSortDescriptor(key: "category", ascending: true)
-        fetchRequest.sortDescriptors = [sort1]
+        let sort2 = NSSortDescriptor(key: "category", ascending: true)
+        fetchRequest.sortDescriptors = [sort1, sort2]
         
         fetchRequest.fetchBatchSize = 20
         
         let fetchResultsController = NSFetchedResultsController(
             fetchRequest: fetchRequest,
             managedObjectContext: managedObjectContext,
-            sectionNameKeyPath: nil,
+            sectionNameKeyPath: "category",
             cacheName: "FavouriteRecipe")
         
         fetchResultsController.delegate = self
@@ -68,9 +68,9 @@ class FavouritesViewController: UIViewController {
 // MARK: - Table View Delegate and Data Source
 extension FavouritesViewController: UITableViewDelegate, UITableViewDataSource {
     
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return fetchResultsController.sections?.count ?? 0
-//    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return fetchResultsController.sections?.count ?? 0
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sectionInfo = fetchResultsController.sections?[section]
@@ -91,10 +91,10 @@ extension FavouritesViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        let sectionInfo = fetchResultsController.sections?[section]
-//        return sectionInfo?.name
-//    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let sectionInfo = fetchResultsController.sections?[section]
+        return sectionInfo?.name
+    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -134,7 +134,7 @@ extension FavouritesViewController: NSFetchedResultsControllerDelegate {
         switch type {
         case .insert:
             print("Inserting foo")
-            tableView.insertRows(at: [indexPath!], with: .bottom)
+            tableView.insertRows(at: [newIndexPath!], with: .bottom)
         case .delete:
             print("deleting foo")            
             tableView.deleteRows(at: [indexPath!], with: .right)
@@ -148,25 +148,25 @@ extension FavouritesViewController: NSFetchedResultsControllerDelegate {
         }
     }
     
-//    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, 
-//                    didChange sectionInfo: NSFetchedResultsSectionInfo,
-//                    atSectionIndex sectionIndex: Int,
-//                    for type: NSFetchedResultsChangeType) {
-//        switch type {
-//        case .insert:
-//            let indexSet = IndexSet(integer: sectionIndex)
-//            tableView.insertSections(indexSet, with: .automatic)
-//        case .delete:
-//            let indexSet = IndexSet(integer: sectionIndex)
-//            tableView.deleteSections(indexSet, with: .automatic)
-//        case .move:
-//            print("moving")
-//        case .update:
-//            print("updating")
-//        @unknown default:
-//            print("unknown foo")
-//        }
-//    }
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, 
+                    didChange sectionInfo: NSFetchedResultsSectionInfo,
+                    atSectionIndex sectionIndex: Int,
+                    for type: NSFetchedResultsChangeType) {
+        switch type {
+        case .insert:
+            let indexSet = IndexSet(integer: sectionIndex)
+            tableView.insertSections(indexSet, with: .automatic)
+        case .delete:
+            let indexSet = IndexSet(integer: sectionIndex)
+            tableView.deleteSections(indexSet, with: .automatic)
+        case .move:
+            print("moving")
+        case .update:
+            print("updating")
+        @unknown default:
+            print("unknown foo")
+        }
+    }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         print("ending of update foo")
