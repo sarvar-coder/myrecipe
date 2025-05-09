@@ -8,14 +8,14 @@
 import Foundation
 
 struct ViewModel {
-    let id: String
-    let name: String
-    let category: String
-    let country: String
-    let instruction: String
+    let id:             String
+    let name:           String
+    let category:       String
+    let country:        String
+    let instruction:    String
     let imageURLString: String
-    let videoURL: String  
-    let ingriedents: [String]
-    let measures: [String]
-    let source: String
+    let videoURL:       String
+    let ingriedents:   [String]
+    let measures:      [String]
+    let source:         String
 }

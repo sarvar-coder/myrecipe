@@ -23,7 +23,6 @@ class RecipeView: UIView {
     let countryLabel = UILabel()
     let categoryLabel = UILabel()
     let instructionTextView = UITextView()
-    let ingredientsTextView = UITextView()
 
     let divider1 = UIView()
     let divider2 = UIView()
@@ -77,21 +76,11 @@ class RecipeView: UIView {
         instructionTextView.isScrollEnabled = false 
         instructionTextView.isEditable = false // Important inside stack view!
         instructionTextView.text = "Instruction: \n \n"
-        
-        ingredientsTextView.font = .systemFont(ofSize: 21)
-        ingredientsTextView.textColor = .label
-        ingredientsTextView.textAlignment = .justified
-        ingredientsTextView.textContainer.lineBreakMode = .byWordWrapping
-        ingredientsTextView.isScrollEnabled = false
-        ingredientsTextView.isEditable = false // Important inside stack view!
-        ingredientsTextView.text = "Ingredients: \n"
-
 
         setupDividers()
     }
     
     func layout() {
-//        addSubview(imageView)
         addSubview(scrollView)
         scrollView.addSubview(stackView)
         
@@ -103,14 +92,7 @@ class RecipeView: UIView {
         stackView.addArrangedSubview(categoryLabel)
         stackView.addArrangedSubview(divider3)
         stackView.addArrangedSubview(instructionTextView)
-        stackView.addArrangedSubview(ingredientsTextView)
         
-//        imageView.snp.makeConstraints { make in
-//            make.top.equalToSuperview().offset(100)
-//            make.leading.equalToSuperview().offset(8)
-//            make.trailing.equalToSuperview().offset(-8)
-//            make.height.equalTo(250)
-//        }
         imageView.snp.makeConstraints { make in
             make.width.equalTo(400)
             make.height.equalTo(400 * 9/16)
@@ -148,11 +130,7 @@ class RecipeView: UIView {
         self.nameLabel.text = "Name:        "   + viewModel.name
         self.countryLabel.text = "Country:    " + viewModel.country
         self.categoryLabel.text = "Category:  " + viewModel.category
-        instructionTextView.text = "Instruction: \n \n" + viewModel.instruction
-        ingredientsTextView.text =
-        "Ingredients: \n \n"
-        +
-        "\(zip(viewModel.ingriedents, viewModel.measures).map({ "\($0) -------- \($1) \n" }).joined().isEmpty ? "" : "\(zip(viewModel.ingriedents, viewModel.measures).map({ "\($0) -------- \($1) \n" }).joined())" )"
+        self.instructionTextView.text = "Instruction: \n \n" + viewModel.instruction
     }
 }
 
